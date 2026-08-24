@@ -22,9 +22,12 @@
 ```
 .
 ├── plc/
-│   ├── ladder/          # 梯形图
-│   ├── scl/             # SCL
-│   └── st/              # 结构化文本
+│   ├── siemens/         # 西门子（TIA Portal / STEP 7）
+│   ├── mitsubishi/      # 三菱（GX Works）
+│   ├── codesys/         # CODESYS
+│   ├── ladder/          # 梯形图（通用）
+│   ├── scl/             # SCL（通用）
+│   └── st/              # 结构化文本（通用）
 ├── robot/
 │   ├── abb/             # ABB RAPID
 │   ├── fanuc/           # FANUC KAREL/TP
@@ -33,6 +36,8 @@
 ├── examples/            # 完整项目示例
 └── notes/               # 学习笔记
 ```
+
+> 品牌目录下可再按编程语言细分，如 `plc/siemens/scl/`、`plc/siemens/ladder/`。
 
 ## 常用 PLC 品牌
 
