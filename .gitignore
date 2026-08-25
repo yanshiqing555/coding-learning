@@ -1,33 +1,48 @@
-# 忽略图片文件
+﻿# 忽略图片文件
 *.png
 *.jpg
 *.jpeg
 *.gif
 *.bmp
-
 # 忽略系统文件
 Thumbs.db
 .DS_Store
-
 # 忽略临时文件
 *.tmp
 *.log
 *.bak
-
 # PLC 工程临时文件（西门子 TIA Portal）
 *.ap[0-9][0-9]
 *.aux
 *.plm
-
 # 三菱工程临时文件
 *.gxw.*.tmp
-
 # 编译生成文件
 *.obj
 *.exe
 *.bin
-
 # IDE 配置
 .idea/
 .vscode/
 *.swp
+# Build outputs
+bin/
+obj/
+*.dll
+*.pdb
+*.msi
+setup/
+setup.exe
+installer/
+# Logs
+crash_err.log
+crash_out.log
+debug_log.txt
+# Visual Studio
+.vs/
+# Node
+node_modules/
+# Windows shortcuts / junk
+*.lnk
+Desktop.ini
+

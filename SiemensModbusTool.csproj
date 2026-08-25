@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>SiemensModbusTool.Program</StartupObject>
+    <AssemblyName>SiemensModbusTool</AssemblyName>
+    <RootNamespace>SiemensModbusTool</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,487 @@
+﻿/* ============================================================
+   Siemens HMI - Industrial Touch Interface Theme
+   Style: Siemens SIMATIC HMI (TP/MP series)
+   ============================================================ */
+
+:root {
+  --bg-dark: #1a1e24;
+  --bg-panel: #232830;
+  --bg-card: #2a2f38;
+  --bg-input: #1e222a;
+  --siemens-blue: #0099cc;
+  --siemens-blue-hover: #00aae0;
+  --siemens-green: #4caf50;
+  --siemens-red: #f44336;
+  --siemens-yellow: #ff9800;
+  --siemens-grey: #78909c;
+  --text-primary: #e0e0e0;
+  --text-secondary: #90a4ae;
+  --text-bright: #ffffff;
+  --border-color: #37474f;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; }
+
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ---- Top Bar ---- */
+.top-bar {
+  height: 52px;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #1a237e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--siemens-blue);
+  z-index: 100;
+}
+
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-bar .logo h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.top-bar .logo .sub {
+  font-size: 11px;
+  color: var(--siemens-grey);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.top-bar .status-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--siemens-red);
+  display: inline-block;
+  transition: background 0.3s;
+}
+.status-dot.online { background: var(--siemens-green); box-shadow: 0 0 8px var(--siemens-green); }
+
+/* ---- Main Layout ---- */
+.main-wrap {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ---- Sidebar ---- */
+.sidebar {
+  width: 60px;
+  background: var(--bg-panel);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  gap: 4px;
+  border-right: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.sidebar .nav-btn {
+  width: 48px; height: 48px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-btn:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-primary);
+}
+
+.sidebar .nav-btn.active {
+  background: var(--siemens-blue);
+  color: #fff;
+}
+
+.sidebar .nav-btn .icon { font-size: 22px; line-height: 1; }
+
+/* ---- Content ---- */
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page { display: none; flex-direction: column; gap: 16px; height: 100%; }
+.page.active { display: flex; }
+
+/* ---- Cards ---- */
+.card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--siemens-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-body { padding: 16px; }
+
+/* ---- Dashboard Widgets ---- */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.widget {
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+.widget:hover { border-color: var(--siemens-blue); }
+
+.widget .label {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.widget .value {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Consolas", "Courier New", monospace;
+  color: var(--text-bright);
+}
+
+.widget .unit {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.widget .bar {
+  margin-top: 10px;
+  height: 4px;
+  background: var(--bg-input);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.widget .bar .fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s;
+  background: var(--siemens-blue);
+}
+.widget .bar .fill.green { background: var(--siemens-green); }
+.widget .bar .fill.yellow { background: var(--siemens-yellow); }
+.widget .bar .fill.red { background: var(--siemens-red); }
+
+/* ---- Connection Panel ---- */
+.conn-panel {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conn-panel .field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.conn-panel .field label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.conn-panel .field input,
+.conn-panel .field select {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Consolas", monospace;
+  outline: none;
+  transition: border-color 0.2s;
+  min-width: 80px;
+}
+.conn-panel .field input:focus,
+.conn-panel .field select:focus { border-color: var(--siemens-blue); }
+.conn-panel .field input[type="text"] { min-width: 140px; }
+.conn-panel .field input[type="number"] { min-width: 70px; }
+
+/* ---- Siemens-style Buttons ---- */
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-height: 42px;
+  min-width: 80px;
+  touch-action: manipulation;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-blue { background: var(--siemens-blue); color: #fff; }
+.btn-blue:hover { background: var(--siemens-blue-hover); }
+
+.btn-green { background: var(--siemens-green); color: #fff; }
+.btn-green:hover { background: #43a047; }
+
+.btn-red { background: var(--siemens-red); color: #fff; }
+.btn-red:hover { background: #e53935; }
+
+.btn-grey { background: var(--siemens-grey); color: #fff; }
+.btn-grey:hover { background: #607d8b; }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--siemens-blue);
+  color: var(--siemens-blue);
+}
+.btn-outline:hover { background: var(--siemens-blue); color: #fff; }
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---- Data Table ---- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--siemens-blue);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.data-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-family: "Consolas", monospace;
+  font-size: 14px;
+}
+
+.data-table tr:hover td { background: rgba(255,255,255,0.03); }
+
+.data-table .addr { color: var(--text-secondary); }
+.data-table .val { color: var(--text-bright); font-weight: 600; }
+.data-table .hex { color: var(--siemens-grey); }
+
+.table-wrap {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ---- Form Row ---- */
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  min-width: 60px;
+}
+
+.form-row input,
+.form-row select {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Consolas", monospace;
+  outline: none;
+  min-width: 80px;
+}
+.form-row input:focus,
+.form-row select:focus { border-color: var(--siemens-blue); }
+
+.form-hint {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ---- Alarm Log ---- */
+.alarm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.alarm-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+  font-size: 13px;
+  border-left: 3px solid transparent;
+}
+
+.alarm-item.error { border-left-color: var(--siemens-red); }
+.alarm-item.warn { border-left-color: var(--siemens-yellow); }
+.alarm-item.info { border-left-color: var(--siemens-blue); }
+
+.alarm-item .time { color: var(--text-secondary); font-size: 11px; min-width: 70px; font-family: "Consolas", monospace; }
+.alarm-item .tag { font-size: 10px; padding: 2px 6px; border-radius: 3px; font-weight: 600; text-transform: uppercase; }
+.alarm-item .tag.err { background: var(--siemens-red); color: #fff; }
+.alarm-item .tag.warn { background: var(--siemens-yellow); color: #000; }
+.alarm-item .tag.info { background: var(--siemens-blue); color: #fff; }
+.alarm-item .msg { flex: 1; color: var(--text-primary); }
+
+/* ---- Write Panel ---- */
+.write-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.write-grid .full-width { grid-column: 1 / -1; }
+
+/* ---- Quick Access ---- */
+.quick-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-btns .qbtn {
+  padding: 14px 20px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Consolas", monospace;
+  min-width: 60px;
+  min-height: 50px;
+  transition: all 0.15s;
+  touch-action: manipulation;
+}
+.quick-btns .qbtn:hover { border-color: var(--siemens-blue); color: var(--siemens-blue); }
+.quick-btns .qbtn:active { background: var(--siemens-blue); color: #fff; border-color: var(--siemens-blue); }
+.quick-btns .qbtn.on { background: var(--siemens-green); color: #fff; border-color: var(--siemens-green); }
+.quick-btns .qbtn.off { background: var(--siemens-red); color: #fff; border-color: var(--siemens-red); }
+
+/* ---- Status Bar ---- */
+.status-bar {
+  height: 28px;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.status-bar .item { display: flex; align-items: center; gap: 4px; }
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--siemens-grey); }
+
+/* ---- Pulse Animation ---- */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.pulse { animation: pulse 1.5s infinite; }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .sidebar { width: 48px; }
+  .sidebar .nav-btn { width: 40px; height: 40px; font-size: 10px; }
+  .sidebar .nav-btn .icon { font-size: 18px; }
+  .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+  .write-grid { grid-template-columns: 1fr; }
+  .conn-panel { flex-direction: column; align-items: stretch; }
+  .conn-panel .field { flex-wrap: wrap; }
+}

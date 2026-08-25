@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920" font-family="'Segoe UI','Microsoft YaHei',Arial,sans-serif">
+<rect x="0" y="0" width="1440" height="920" fill="#ffffff"/>
+<rect x="10" y="10" width="1420" height="900" rx="10" fill="#1B2733" stroke="#263238" stroke-width="8" stroke-dasharray="" style="opacity:1"/>
+<rect x="30" y="30" width="1380" height="860" rx="10" fill="#EAF1F8" stroke="#0070C0" stroke-width="3" stroke-dasharray="" style="opacity:1"/>
+<rect x="50" y="50" width="1340" height="80" rx="10" fill="#0070C0" stroke="#0070C0" stroke-width="1" stroke-dasharray="" style="opacity:1"/>
+<text x="202" y="76.5" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">SIMATIC HMI TP1500 Comfort</text>
+<text x="720" y="84" font-size="30" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">电机控制画面</text>
+<text x="720" y="106" font-size="12" fill="#D6E7F7" text-anchor="middle" dominant-baseline="central" style="opacity:1">MOTOR CONTROL PANEL</text>
+<text x="1302.3999999999999" y="76" font-size="16" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">2026-08-07 14:30:25</text>
+<rect x="60" y="160" width="380" height="380" rx="10" fill="#FFFFFF" stroke="#0070C0" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="142.05" y="183.25" font-size="18" fill="#0070C0" text-anchor="middle" dominant-baseline="central" style="opacity:1">控制区  CONTROL</text>
+<rect x="85" y="225" width="155" height="80" rx="10" fill="#00B050" stroke="#008A3B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="162.5" y="258" font-size="24" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">启动</text>
+<text x="162.5" y="282" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">START</text>
+<rect x="260" y="225" width="155" height="80" rx="10" fill="#E4002B" stroke="#A00000" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="337.5" y="258" font-size="24" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">停止</text>
+<text x="337.5" y="282" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">STOP</text>
+<ellipse cx="125" cy="359" rx="29" ry="29" fill="#00B050" stroke="#008A3B" stroke-width="2" style="opacity:1"/>
+<ellipse cx="133" cy="351" rx="9" ry="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" style="opacity:0.4"/>
+<text x="125" y="412" font-size="16" fill="#008A3B" text-anchor="middle" dominant-baseline="central" style="opacity:1">运行</text>
+<ellipse cx="250" cy="359" rx="29" ry="29" fill="#E4002B" stroke="#A00000" stroke-width="2" style="opacity:1"/>
+<ellipse cx="258" cy="351" rx="9" ry="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" style="opacity:0.4"/>
+<text x="250" y="412" font-size="16" fill="#A00000" text-anchor="middle" dominant-baseline="central" style="opacity:1">故障</text>
+<ellipse cx="375" cy="359" rx="29" ry="29" fill="#FFC000" stroke="#D48806" stroke-width="2" style="opacity:1"/>
+<ellipse cx="383" cy="351" rx="9" ry="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" style="opacity:0.4"/>
+<text x="375" y="412" font-size="16" fill="#B8860B" text-anchor="middle" dominant-baseline="central" style="opacity:1">就绪</text>
+<rect x="470" y="160" width="440" height="380" rx="10" fill="#FFFFFF" stroke="#0070C0" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="570.0500000000001" y="183.25" font-size="18" fill="#0070C0" text-anchor="middle" dominant-baseline="central" style="opacity:1">工艺流程图  PROCESS</text>
+<rect x="505" y="240" width="150" height="240" rx="10" fill="#DCE9F5" stroke="#0070C0" stroke-width="2.5" stroke-dasharray="" style="opacity:1"/>
+<rect x="512" y="310" width="136" height="168" rx="10" fill="#00A2E8" stroke="#00A2E8" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<polyline points="512,420 648,420" fill="none" stroke="#0070C0" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 6" style="opacity:1"/>
+<text x="580" y="405" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">65%</text>
+<text x="580" y="214" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">T-101 水箱</text>
+<ellipse cx="720" cy="390" rx="56" ry="56" fill="#FFFFFF" stroke="#0070C0" stroke-width="3" style="opacity:1"/>
+<text x="720" y="390" font-size="30" fill="#0070C0" text-anchor="middle" dominant-baseline="central" style="opacity:1">M</text>
+<text x="720" y="305" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">泵  P-101</text>
+<polygon points="850,350 890,390 850,430 810,390" fill="#FFC000" stroke="#D48806" stroke-width="2.5" style="opacity:1"/>
+<text x="850" y="390" font-size="16" fill="#6B4F00" text-anchor="middle" dominant-baseline="central" style="opacity:1">V-201</text>
+<text x="850" y="318" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">调节阀</text>
+<polyline points="580,480 580,515 730,515 730,413" fill="none" stroke="#2E75B6" stroke-width="4" stroke-linecap="round" stroke-dasharray="" style="opacity:1"/>
+<polyline points="620,515 710,515" fill="none" stroke="#2E75B6" stroke-width="3" stroke-linecap="round" stroke-dasharray="" style="opacity:1"/>
+<polygon points="710,515 697,522 697,508" fill="#2E75B6" style="opacity:1"/>
+<polyline points="776,390 806,390" fill="none" stroke="#2E75B6" stroke-width="4" stroke-linecap="round" stroke-dasharray="" style="opacity:1"/>
+<polyline points="782,390 803,390" fill="none" stroke="#2E75B6" stroke-width="3" stroke-linecap="round" stroke-dasharray="" style="opacity:1"/>
+<polygon points="803,390 790,397 790,383" fill="#2E75B6" style="opacity:1"/>
+<polyline points="890,390 910,390 910,250" fill="none" stroke="#2E75B6" stroke-width="4" stroke-linecap="round" stroke-dasharray="" style="opacity:1"/>
+<polygon points="910,250 917,263 903,263" fill="#2E75B6" style="opacity:1"/>
+<text x="945.7" y="293.5" font-size="12" fill="#2E75B6" text-anchor="middle" dominant-baseline="central" style="opacity:1">出水 OUT</text>
+<rect x="940" y="160" width="400" height="380" rx="10" fill="#FFFFFF" stroke="#0070C0" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="1016.2" y="183.25" font-size="18" fill="#0070C0" text-anchor="middle" dominant-baseline="central" style="opacity:1">数据监控  DATA</text>
+<text x="1023.375" y="229.375" font-size="15" fill="#333333" text-anchor="middle" dominant-baseline="central" style="opacity:1">设定频率 SET FREQ</text>
+<rect x="1190" y="215" width="130" height="42" rx="10" fill="#FFF9E6" stroke="#C0A000" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1255" y="236" font-size="18" fill="#7F6000" text-anchor="middle" dominant-baseline="central" style="opacity:1">50.00 Hz</text>
+<text x="1023.375" y="286.375" font-size="15" fill="#333333" text-anchor="middle" dominant-baseline="central" style="opacity:1">实际频率 ACT FREQ</text>
+<rect x="1190" y="272" width="130" height="42" rx="10" fill="#EAF6FF" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1255" y="293" font-size="18" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">49.98 Hz</text>
+<text x="1021.125" y="343.375" font-size="15" fill="#333333" text-anchor="middle" dominant-baseline="central" style="opacity:1">运行电流 CURRENT</text>
+<rect x="1190" y="329" width="130" height="42" rx="10" fill="#EAF6FF" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1255" y="350" font-size="18" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">12.35 A</text>
+<text x="1020.75" y="400.375" font-size="15" fill="#333333" text-anchor="middle" dominant-baseline="central" style="opacity:1">运行时间 RUNTIME</text>
+<rect x="1190" y="386" width="130" height="42" rx="10" fill="#EAF6FF" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1255" y="407" font-size="18" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">1256.5 h</text>
+<text x="1033.5" y="461.375" font-size="15" fill="#A00000" text-anchor="middle" dominant-baseline="central" style="opacity:1">报警信息  ALARM LIST</text>
+<rect x="960" y="480" width="360" height="52" rx="10" fill="#FFF3F3" stroke="#E4002B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="1140" y="506" font-size="16" fill="#A00000" text-anchor="middle" dominant-baseline="central" style="opacity:1">08-07 14:28  电机过载报警 ALARM</text>
+<text x="1366.5" y="171.875" font-size="11" fill="#666666" text-anchor="middle" dominant-baseline="central" style="opacity:1">功能键</text>
+<rect x="1350" y="180" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="198" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F1</text>
+<rect x="1350" y="224" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="242" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F2</text>
+<rect x="1350" y="268" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="286" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F3</text>
+<rect x="1350" y="312" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="330" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F4</text>
+<rect x="1350" y="356" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="374" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F5</text>
+<rect x="1350" y="400" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="418" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F6</text>
+<rect x="1350" y="444" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="462" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F7</text>
+<rect x="1350" y="488" width="50" height="36" rx="9" fill="#D9E4F0" stroke="#0070C0" stroke-width="1.5" stroke-dasharray="" style="opacity:1"/>
+<text x="1375" y="506" font-size="13" fill="#005A9E" text-anchor="middle" dominant-baseline="central" style="opacity:1">F8</text>
+<rect x="60" y="570" width="1280" height="60" rx="10" fill="#F7FAFD" stroke="#0070C0" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<ellipse cx="100" cy="600" rx="15" ry="15" fill="#00B050" stroke="#008A3B" stroke-width="2" style="opacity:1"/>
+<text x="274.4" y="603.25" font-size="18" fill="#006633" text-anchor="middle" dominant-baseline="central" style="opacity:1">系统状态: 运行正常  SYSTEM RUNNING</text>
+<text x="1178.5500000000002" y="604.75" font-size="14" fill="#444444" text-anchor="middle" dominant-baseline="central" style="opacity:1">S7-1200 | IP: 192.168.0.1 | PLC 已连接</text>
+<rect x="140" y="665" width="170" height="55" rx="10" fill="#005A9E" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="225" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">画面 1</text>
+<rect x="330" y="665" width="170" height="55" rx="10" fill="#0070C0" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="415" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">画面 2</text>
+<rect x="520" y="665" width="170" height="55" rx="10" fill="#0070C0" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="605" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">画面 3</text>
+<rect x="710" y="665" width="170" height="55" rx="10" fill="#0070C0" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="795" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">报警</text>
+<rect x="900" y="665" width="170" height="55" rx="10" fill="#0070C0" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="985" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">设置</text>
+<rect x="1090" y="665" width="170" height="55" rx="10" fill="#0070C0" stroke="#003E6B" stroke-width="2" stroke-dasharray="" style="opacity:1"/>
+<text x="1175" y="692.5" font-size="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" style="opacity:1">手动/自动</text>
+<text x="1268.2" y="803.75" font-size="22" fill="#0070C0" text-anchor="middle" dominant-baseline="central" style="opacity:1">SIEMENS</text>
+<text x="175.59999999999997" y="802.5" font-size="12" fill="#888888" text-anchor="middle" dominant-baseline="central" style="opacity:1">HMI 触摸屏画面设计 · Excalidraw 演示</text>
+</svg>

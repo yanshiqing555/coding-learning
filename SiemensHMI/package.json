@@ -1,0 +1,9 @@
+{
+  "name": "siemens-hmi",
+  "version": "1.0.0",
+  "description": "Web HMI - Siemens Style Modbus TCP Touch Interface",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

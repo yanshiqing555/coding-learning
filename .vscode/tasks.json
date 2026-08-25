@@ -1,0 +1,26 @@
+﻿{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+            "args": [
+                "/target:winexe",
+                "/reference:System.dll",
+                "/reference:System.Windows.Forms.dll",
+                "/reference:System.Drawing.dll",
+                "/reference:System.Data.dll",
+                "/reference:System.Core.dll",
+                "/out:SiemensModbusTool.exe",
+                "Program.cs",
+                "MainForm.cs",
+                "ModbusTcpClient.cs"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
